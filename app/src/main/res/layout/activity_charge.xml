@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/material_blue_grey_950"
+    android:orientation="vertical"
+    tools:context="ar.com.matiasgualino.nfc.activities.ChargeActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:text="Nombre y apellido:"
+        android:textSize="18dp"
+        android:paddingTop="25dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/identification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:text="DNI:"
+        android:textSize="18dp"
+        android:paddingTop="25dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/account_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:text="Saldo actual:"
+        android:textSize="18dp"
+        android:paddingTop="25dp">
+    </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/abc_primary_text_disable_only_material_dark"
+            android:text="¿Cuánto queres cargar?"
+            android:textSize="18dp"
+            android:paddingTop="25dp">
+        </TextView>
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="50dp"
+            style="@style/edit_text"
+        android:lines="1"/>
+
+
+    <com.mercadopago.views.MPButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mpsdk_button_height"
+        android:gravity="center"
+        android:text="Cargar tarjeta"
+        android:onClick="submit"
+
+        style="@style/button_normal"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/material_blue_grey_950"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/vos"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:text="Acerca una Tarjeta Vos para configurarla, ver su información o cargarle saldo."
+        android:textSize="18dp"
+        android:paddingTop="25dp">
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/img_nfc"
+        android:layout_width="150dip"
+        android:layout_height="250dip"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_nfc"
+
+        />
+
+</LinearLayout>
